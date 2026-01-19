@@ -29,7 +29,7 @@ export default function Home() {
             alt=""
             className="w-full h-150 object-fill"
           />
-<p></p>
+
           <div className="absolute bg-green-500/70 inset-0 backdrop-opacity-10 text-center px-15 py-50 ">
             <div className="absolute top-72 right-19 text-white text-[30px]  rounded-full bg-green-700 flex items-center justify-center w-12 h-12">
               <MdNavigateNext />
