@@ -1,0 +1,27 @@
+.swiper-button-prev{
+    position: static !important;
+    margin-top: 50px !important;
+    margin-bottom: 30px !important;
+        margin-left: 550px !important;
+        border: 1px solid rgb(67, 199, 6);
+        border-radius: 5px;
+        padding: 15px 15px;
+        color: rgb(67, 199, 6);
+}
+.swiper-button-next {
+    position: static !important;
+    margin-top: -73px !important;
+    margin-left: 614px !important;
+    border: 1px solid rgb(67, 199, 6);
+        border-radius: 5px;
+        padding: 15px 15px;
+        color: rgb(67, 199, 6);
+    /* height: 20px !important; */
+}
+.swiper-button-prev, .swiper-button-next {
+    svg {
+        width: 20px !important;
+        height: 13px !important;
+        font-weight: bolder;
+    }
+}
