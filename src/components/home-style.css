@@ -35,3 +35,45 @@
     
     background: rgb(67, 199, 6) !important;
 }
+@media (max-width: 1024px) {
+  .swiper-button-prev{
+    padding: 8px 10px !important;
+    
+    margin-left: 100px !important;
+  }
+  .swiper-button-next {
+    padding: 8px 10px !important;
+    margin-left: 165px !important;
+    margin-top: -73px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    padding: 6px 8px;
+    margin: 6px;
+  }
+  .swiper-button-prev svg,
+  .swiper-button-next svg {
+    width: 16px;
+    height: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    padding: 5px 6px;
+    margin: 4px;
+  }
+  .swiper-button-prev svg,
+  .swiper-button-next svg {
+    width: 14px;
+    height: 9px;
+  }
+  .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+  }
+}
