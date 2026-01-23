@@ -1,7 +1,7 @@
 .swiper-button-prev{
     position: static !important;
-    margin-top: 50px !important;
-    margin-bottom: 30px !important;
+    margin-top: 68px !important;
+    margin-bottom: 41px !important;
         margin-left: 550px !important;
         border: 1px solid rgb(67, 199, 6);
         border-radius: 5px;
@@ -10,7 +10,7 @@
 }
 .swiper-button-next {
     position: static !important;
-    margin-top: -73px !important;
+    margin-top: -84px !important;
     margin-left: 614px !important;
     border: 1px solid rgb(67, 199, 6);
         border-radius: 5px;
@@ -31,6 +31,9 @@
     border-width: 1px  !important;
     border: black !important;
 }
+.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: var(--swiper-pagination-bottom, -4px) !important;
+}
 .swiper-pagination-bullet-active {
     
     background: rgb(67, 199, 6) !important;
@@ -39,33 +42,45 @@
   .swiper-button-prev{
     padding: 8px 10px !important;
     
-    margin-left: 100px !important;
+    margin-left: 437px !important;
   }
   .swiper-button-next {
     padding: 8px 10px !important;
-    margin-left: 165px !important;
-    margin-top: -73px !important;
+    margin-left: 500px !important;
   }
 }
 
 @media (max-width: 768px) {
-  .swiper-button-prev,
+  .swiper-button-prev{
+    padding: 8px 10px !important;
+    
+    margin-left: 286px !important;
+  }
   .swiper-button-next {
-    padding: 6px 8px;
-    margin: 6px;
+    padding: 6px 8px !important;
+    margin-left: 353px !important;
+    margin-top: -84px !important;
   }
   .swiper-button-prev svg,
   .swiper-button-next svg {
     width: 16px;
     height: 10px;
   }
+  .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: var(--swiper-pagination-bottom, 8px) !important;
+}
 }
 
 @media (max-width: 480px) {
-  .swiper-button-prev,
+  .swiper-button-prev{
+    padding: 8px 10px !important;
+    
+    margin-left: 100px !important;
+  }
   .swiper-button-next {
-    padding: 5px 6px;
-    margin: 4px;
+    padding: 8px 10px !important;
+    margin-left: 165px !important;
+    margin-top: -84px !important;
   }
   .swiper-button-prev svg,
   .swiper-button-next svg {

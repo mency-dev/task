@@ -29,6 +29,7 @@ import logo1 from "../assets/amazon-com-logo-svgrepo-com.svg";
 import logo2 from "../assets/envato-svgrepo-com.svg";
 import { useForm } from "react-hook-form";
 import { useState } from "react";
+import { RiDoubleQuotesR } from "react-icons/ri";
 export default function Home() {
   const fundData = [
     {
@@ -54,52 +55,52 @@ export default function Home() {
           <img
             src="https://media.istockphoto.com/id/517188688/photo/mountain-landscape.jpg?s=612x612&w=0&k=20&c=A63koPKaCyIwQWOTFBRWXj_PwCrR4cEoOw2S9Q7yVl8="
             alt=""
-            className="w-full h-150 object-fill"
+            className="w-full md:h-110 h-120 lg:h-150 object-fill"
           />
 
-          <div className="absolute bg-green-500/70 inset-0 backdrop-opacity-10 text-center px-1 sm:px-15 py-10 sm:py-50 ">
-            <div className="hidden sm:flex absolute top-72 right-19 text-white text-[30px] rounded-full bg-green-700 items-center justify-center w-12 h-12">
+          <div className="absolute bg-green-500/70 inset-0 backdrop-opacity-10 text-center px-4 lg:px-15 py-15 lg:py-50 ">
+            <div className="hidden sm:flex absolute sm:top-50 sm:right-10 lg:top-72 lg:right-19 text-white text-[30px] rounded-full bg-green-700 items-center justify-center w-12 h-12">
               <MdNavigateNext />
             </div>
 
-            <div className="hidden sm:flex absolute top-72 left-19 text-white text-[30px] rounded-full bg-green-700 items-center justify-center w-12 h-12">
+            <div className="hidden sm:flex absolute sm:top-50 sm:left-10 lg:top-72 lg:right-19 text-white text-[30px] rounded-full bg-green-700 items-center justify-center w-12 h-12">
               <MdNavigateBefore />
             </div>
-            <h1 className="sm:text-[33px] text-[25px] font-extrabold pb-5 ">
+            <h1 className="sm:text-[33px] text-[22px] font-extrabold pb-5 ">
               CHILDREN NEED YOUR HELP
             </h1>
-            <p className="text-[15px] pb-11 leading-7 px-5 sm:px-42">
+            <p className="sm:text-[15px] text-[14px] pb-11 leading-6 md:leading-7 px-5 sm:px-42">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
               aspernatur inventore repudiandae porro molestias blanditiis
               voluptatem in numquam aliquam ea, hic odit perspiciatis non
               incidunt delectus, facere corporis explicabo provident.
             </p>
             <div className="flex sm:flex-row gap-4 flex-col justify-center items-center">
-              <button className="bg-white text-green-500 px-10 py-3 font-semibold rounded-full ">
+              <button className="bg-white text-green-500 px-5 py-2 sm:px-10 sm:py-3 font-semibold rounded-full ">
                 DONATE NOW
               </button>
-              <button className="border px-10 py-3 rounded-full font-semibold">
+              <button className="border px-5 py-2 sm:px-10 sm:py-3 rounded-full font-semibold">
                 CONTACT US
               </button>
             </div>
           </div>
         </div>
       </div>
-      <div className="sm:py-26 py-15 bg-white text-gray-700 ">
-        <div className="flex justify-center flex-col items-center pb-17  ">
-          <h1 className="text-[30px] font-semibold pb-2">OUR ACTIVITY</h1>
+      <div className="lg:py-26 sm:py-18 py-13 bg-white text-gray-700 ">
+        <div className="flex justify-center flex-col items-center pb-9 sm:pb-12 lg:pb-17  ">
+          <h1 className="sm:text-[30px] text-[25px] font-semibold pb-2">OUR ACTIVITY</h1>
           <span className="block border-1 w-19 border-green-500 ml-3 text-center"></span>
-          <p className="text-[15px] px-5 sm:px-100 text-center pt-9 leading-7">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Repellendus ab neque sequi, fugit ut suscipit sit quisquam totam
-            minus dolore.
+          <p className="text-[15px] px-5 md:px-30 lg:px-75 xl:px-100 text-center pt-4 sm:pt-9 leading-7">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua
           </p>
         </div>
         <div className="bg-white text-gray-700 dark:text-gray-400 pt-11 pb-8">
-          <div className="flex flex-col sm:flex-row px-3 sm:px-26 gap-25">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-15   px-7 sm:px-10 xl:gap-22 lg:gap-10  lg:px-18 xl:px-26 ">
             <div className="relative  shadow-[0_2px_25px_rgba(0,0,0,0.1)] px-8 py-8 rounded-xl">
               <div
-                className="absolute flex  justify-center items-center text-[29px] -top-9 left-28 z-10 
+                className="absolute flex  justify-center items-center text-[29px] -top-9  left-1/2
+      -translate-x-1/2 z-10 
               bg-white rounded-full w-19 h-19 shadow-[0_0_10px_rgba(0,0,0,0.2)]"
               >
                 <IoIosSend />
@@ -116,7 +117,8 @@ export default function Home() {
             </div>
             <div className="relative  shadow-[0_2px_25px_rgba(0,0,0,0.1)] px-8 py-8 rounded-xl">
               <div
-                className="absolute flex justify-center items-center text-[25px] -top-9 left-28 z-10 
+                className="absolute flex justify-center items-center text-[25px] -top-9 left-1/2
+      -translate-x-1/2 z-10 
               bg-white rounded-full w-19 h-19 shadow-[0_0_10px_rgba(0,0,0,0.2)]"
               >
                 <FaHeart />
@@ -133,7 +135,8 @@ export default function Home() {
             </div>
             <div className="relative  shadow-[0_2px_25px_rgba(0,0,0,0.1)] px-8 py-8 rounded-xl">
               <div
-                className="absolute flex justify-center items-center text-[29px] -top-9 left-28 z-10 
+                className="absolute flex justify-center items-center text-[29px] -top-9 left-1/2
+      -translate-x-1/2 z-10 
               bg-white rounded-full w-19 h-19 shadow-[0_0_10px_rgba(0,0,0,0.2)]"
               >
                 <IoIosSend />
@@ -156,15 +159,15 @@ export default function Home() {
           <img
             src="https://media.istockphoto.com/id/517188688/photo/mountain-landscape.jpg?s=612x612&w=0&k=20&c=A63koPKaCyIwQWOTFBRWXj_PwCrR4cEoOw2S9Q7yVl8="
             alt=""
-            className="w-full h-148 object-fill"
+            className="w-full h-140 md:h-130 lg:h-148 object-fill"
           />
-          <div className="absolute bg-green-500/90 inset-0 backdrop-opacity-10 text-center flex justify-center sm:px-78 px-3 py-10 sm:py-23">
+          <div className="absolute bg-green-500/90 inset-0 backdrop-opacity-10 text-center flex justify-center md:px-15 lg:px-60 xl:px-78 px-3 py-14 lg:py-23">
             <div>
-              <h1 className="text-[19px] font-medium pb-3">URGENT CAUSE</h1>
-              <h1 className="text-[29px] font-semibold pb-7">
+              <h1 className="sm:text-[19px] text-[17px] font-medium pb-3">URGENT CAUSE</h1>
+              <h1 className="sm:text-[29px] text-[22px] font-semibold pb-5 sm:pb-7">
                 Recent Environmental Disasters
               </h1>
-              <p className="text-[15px] px-5 pb-1 leading-7">
+              <p className="sm:text-[15px] text-[14px] px-5 pb-1 leading-6 sm:leading-7">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -200,19 +203,19 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="py-26 bg-white text-gray-700">
-        <div className="flex justify-center flex-col items-center pb-17  ">
-          <h1 className="text-[30px] font-semibold pb-2">UPCOMING EVENTS</h1>
+      <div className="lg:pt-26   lg:pb-34 pt-17 pb-20 bg-white text-gray-700">
+        <div className="flex justify-center flex-col items-center pb-9 sm:pb-17   ">
+          <h1 className="sm:text-[30px] text-[25px] font-semibold pb-2">UPCOMING EVENTS</h1>
           <span className="block border-1 w-19 border-green-500 ml-3 text-center"></span>
-          <p className="text-[15px] text-center px-5 sm:px-100 pt-9 leading-7">
+          <p className="text-[15px] px-5 md:px-30 lg:px-75 xl:px-100 text-center pt-4 sm:pt-9 leading-7">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua
           </p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-3 sm:px-25">
-          <div className="w-full max-w-sm mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:gap-18 gap-16 px-3 sm:px-15 lg:px-20 xl:px-25">
+          <div className="w-full sm:max-w-sm lg:max-w-full mx-auto bg-white  overflow-hidden">
             <div>
-              <img src={image} alt="" className="" />
+              <img src={image} alt="" className="w-full rounded-xl h-auto block" />
             </div>
             <div className="flex justify-between pt-3">
               <div className="flex items-center text-[14px]">
@@ -235,9 +238,9 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="w-full max-w-sm mx-auto">
+          <div className="w-full sm:max-w-sm lg:max-w-full mx-auto bg-white  overflow-hidden">
             <div>
-              <img src={image} alt="" className="" />
+              <img src={image} alt="" className="w-full rounded-xl h-auto block" />
             </div>
             <div className="flex justify-between pt-3">
               <div className="flex items-center text-[14px]">
@@ -260,9 +263,9 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="w-full max-w-sm mx-auto">
+          <div className="w-full sm:max-w-sm lg:max-w-full mx-auto bg-white  overflow-hidden">
             <div>
-              <img src={image} alt="" className="" />
+              <img src={image} alt="" className="w-full rounded-xl h-auto block" />
             </div>
             <div className="flex justify-between pt-3">
               <div className="flex items-center text-[14px]">
@@ -294,7 +297,7 @@ export default function Home() {
             alt=""
             className="w-full h-100 sm:h-80 object-fill"
           />
-          <div className="absolute bg-green-500/90 inset-0 backdrop-opacity-10 text-center  px-0 sm:px-80 py-0 sm:py-15">
+          <div className="absolute bg-green-500/90 inset-0 backdrop-opacity-10 text-center  px-0 lg:px-15 py-0 sm:py-15">
             <div className="grid grid-cols-2 sm:grid-cols-4 divide-x  sm:divide-y-0 divide-green-400">
               {/* CAUSES */}
               <div className="flex flex-col items-center py-8">
@@ -327,26 +330,27 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="py-26 bg-white text-gray-700">
-        <div className="flex justify-center flex-col items-center pb-17 ">
-          <h1 className="text-[30px] font-semibold pb-2">OUR CAUSES</h1>
+      <div className="lg:pt-26 lg:pb-34 pt-17 pb-20 bg-white text-gray-700">
+        <div className="flex justify-center flex-col items-center pb-9 sm:pb-17   ">
+          <h1 className="sm:text-[30px] text-[25px] font-semibold pb-2">OUR CAUSES</h1>
           <span className="block border-1 w-19 border-green-500 ml-3 text-center"></span>
-          <p className="text-[15px] text-center px-5 sm:px-100 pt-9 leading-7">
+          <p className="text-[15px] px-5 md:px-30 lg:px-75 xl:px-100 text-center pt-4 sm:pt-9 leading-7">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua
           </p>
         </div>
 
-        <div className=" px-4 sm:px-10 lg:px-20 pb-10">
+        <div className=" px-4 sm:px-10 lg:px-15 xl:px-20 pb-7">
           <Swiper
             modules={[Navigation, Pagination]}
             navigation
             loop
-            slidesPerView={1} // default for mobile
-            spaceBetween={10} // default for mobile
+            slidesPerView={1} 
+            spaceBetween={10} 
             breakpoints={{
               768: { slidesPerView: 2, spaceBetween: 30 },
-              1024: { slidesPerView: 3, spaceBetween: 50 },
+              1024: { slidesPerView: 3, spaceBetween: 40 },
+              1166:{slidesPerView: 3, spaceBetween: 50 }
             }}
           >
             <SwiperSlide>
@@ -588,14 +592,14 @@ export default function Home() {
           </Swiper>
         </div>
       </div>
-      <div className=" px-4 sm:px-10 lg:px-20 bg-white ">
-        <div className="flex flex-col sm:flex-row">
-          <div className=" bg-green-500 text-white text-center sm:w-full lg:w-1/2 pt-20 pb-15">
+      <div className=" px-3 sm:px-10 lg:px-20 bg-white ">
+        <div className="flex flex-col lg:flex-row">
+          <div className=" bg-green-500 text-white text-center w-full lg:w-1/2 pt-10 pb-10 lg:pt-17 lg:pb-14">
             <h1 className="text-[22px] font-semibold">DONATION NOW</h1>
             <form onSubmit={handleSubmit((data) => console.log(data))}>
-              <div className="flex items-center justify-center gap-1 lg:gap-6 py-10 text-[15px] text-gray-100">
+              <div className="flex items-center justify-center gap-1 md:gap-6 py-10 text-[14.5px] text-gray-100">
                 <span className="font-semibold">AMOUNT :</span>
-                <label className="flex items-center  lg:gap-2 cursor-pointer">
+                <label className="flex items-center  md:gap-2 cursor-pointer">
                   <input
                     type="radio"
                     value="20"
@@ -604,7 +608,7 @@ export default function Home() {
                   />
                   20USD
                 </label>
-                <label className="flex items-center lg:gap-2 cursor-pointer">
+                <label className="flex items-center md:gap-2 cursor-pointer">
                   <input
                     type="radio"
                     value="50"
@@ -613,7 +617,7 @@ export default function Home() {
                   />
                   50USD
                 </label>
-                <label className="flex items-center lg:gap-2 cursor-pointer">
+                <label className="flex items-center md:gap-2 cursor-pointer">
                   <input
                     type="radio"
                     value="100"
@@ -623,9 +627,9 @@ export default function Home() {
                   100USD
                 </label>
               </div>
-              <div className="flex items-center justify-center gap-1 lg:gap-6 text-[15px] text-gray-100 pb-5">
+              <div className="flex items-center justify-center gap-1 md:gap-6 text-[14.5px] text-gray-100 pb-11">
                 <span className="font-semibold">TYPE :</span>
-                <label className="flex items-center lg:gap-2 cursor-pointer">
+                <label className="flex items-center md:gap-2 cursor-pointer">
                   <input
                     type="radio"
                     value="one-time"
@@ -634,7 +638,7 @@ export default function Home() {
                   />
                   ONE TIME
                 </label>
-                <label className="flex items-center lg:gap-2 cursor-pointer">
+                <label className="flex items-center md:gap-2 cursor-pointer">
                   <input
                     type="radio"
                     value="monthly"
@@ -643,7 +647,7 @@ export default function Home() {
                   />
                   MONTHLY
                 </label>
-                <label className="flex items-center lg:gap-2 cursor-pointer">
+                <label className="flex items-center md:gap-2 cursor-pointer">
                   <input
                     type="radio"
                     value="yearly"
@@ -653,7 +657,7 @@ export default function Home() {
                   YEARLY
                 </label>
               </div>
-              <div className="py-5 px-1 lg:px-15 flex justify-center gap-3 lg:gap-7">
+              <div className="py-5 px-1 md:px-7 lg:px-13 flex md:flex-row flex-col justify-center gap-3 lg:gap-5">
                 <input
                   {...register("name", { required: true })}
                   placeholder="Name"
@@ -665,7 +669,7 @@ export default function Home() {
                   className="border rounded-xl border-white w-full px-4 py-3 text-white"
                 />
               </div>
-              <div className="px-1 lg:px-15 pb-15">
+              <div className="px-1 md:px-7 lg:px-13 pb-13">
                 <select
                   {...register("category", { required: true })}
                   className="border rounded-xl border-white w-full px-4 py-4 text-white text-[15px]"
@@ -680,7 +684,7 @@ export default function Home() {
               </button>
             </form>
           </div>
-          <div className="bg-gray-200 text-black text-center sm:w-full lg:w-1/2 pt-20 pb-">
+          <div className="bg-gray-200 text-black text-center w-full lg:w-1/2 pt-17 pb-">
             <h1 className="text-[21px] font-medium pb-10">FEATURED DONORS</h1>
             <Swiper
               modules={[Navigation, Pagination]}
@@ -692,7 +696,7 @@ export default function Home() {
               loop
             >
               <SwiperSlide>
-                <div className="pb-25 flex flex-col items-center">
+                <div className="pb-26 flex flex-col items-center">
                   <img
                     src={image}
                     alt=""
@@ -743,96 +747,99 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="py-26 bg-white text-gray-700 ">
-        <div className="flex justify-center flex-col items-center pb-17  ">
-          <h1 className="text-[30px] font-semibold pb-2">OUR VOLUNTEER</h1>
+      <div className="lg:pt-26 lg:pb-34 pt-17 pb-20 bg-white text-gray-700">
+        <div className="flex justify-center flex-col items-center pb-9 sm:pb-17      ">
+          <h1 className="sm:text-[30px] text-[25px] font-semibold pb-2">OUR VOLUNTEER</h1>
           <span className="block border-1 w-19 border-green-500 ml-3 text-center"></span>
-          <p className="text-[15px] text-center px-5 lg:px-100 pt-9 leading-7">
+          <p className="text-[15px] px-5 md:px-30 lg:px-75 xl:px-100 text-center pt-4 sm:pt-9 leading-7">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua
           </p>
         </div>
-        <div className="px-4 sm:px-6 lg:px-20">
+        <div className="px-4 sm:px-6 lg:px-20 ">
           <Swiper
             modules={[Navigation, Pagination]}
-            slidesPerView={1} // default mobile
-            spaceBetween={20} // default mobile
+            slidesPerView={1} 
+            spaceBetween={20}
             breakpoints={{
-              640: { slidesPerView: 1.5, spaceBetween: 30 }, // small tablet
-              768: { slidesPerView: 2, spaceBetween: 40 }, // tablet
-              1024: { slidesPerView: 2.2, spaceBetween: 210 }, // desktop
+              640: { slidesPerView: 1.5, spaceBetween: 30 }, 
+              768: { slidesPerView: 1.7, spaceBetween: 70 }, 
+              940:{slidesPerView: 1.9, spaceBetween: 70},
+              1024: { slidesPerView: 2.1, spaceBetween: 100 },
+              1166: { slidesPerView: 2.2, spaceBetween: 200 }, 
             }}
             navigation
             loop
+            
           >
             <SwiperSlide>
               <div className="flex flex-col sm:flex-row justify-center gap-5 shadow-[0_2px_9px_rgba(0,0,0,0.3)] rounded-xl">
                 <img
                   src={image}
                   alt=""
-                  className="object-cover sm:w-full lg:w-45 rounded-t-xl h-49 rounded-xl"
+                  className="object-cover w-full sm:w-40 lg:w-40 rounded-t-xl sm:h-42  h-45  rounded-xl"
                 />
 
                 <div className=" py-5 text-gray-500">
-                  <h1 className=" text-gray-700 text-[20px] pb-1 font-semibold">
+                  <h1 className=" text-gray-700 text-[18px] pb-1 font-semibold">
                     Albert R. Ardoin
                   </h1>
-                  <p className="text-[16px] pb-1">Actor</p>
-                  <p className="pb-2 text-[16px]">
+                  <p className="text-[14px] pb-1">Actor</p>
+                  <p className="pb-2 text-[15px]">
                     Lorem ipsum dolor sit amet consectetur adipisi
                   </p>
-                  <div className="flex gap-5 text-[19px]">
+                  <div className="flex gap-5 text-[17px]">
                     <FaFacebookF />
                     <FaTwitter />
-                    <FaBehance />
+                    <FaBehance className="text-[20px]"/>
                   </div>
                 </div>
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="flex  flex-col sm:flex-row  gap-5  shadow-[0_2px_9px_rgba(0,0,0,0.3)] rounded-xl">
+              <div className="flex flex-col sm:flex-row justify-center gap-5 shadow-[0_2px_9px_rgba(0,0,0,0.3)] rounded-xl">
                 <img
                   src={image}
                   alt=""
-                  className="object-cover sm:w-full lg:w-45 rounded-t-xl h-49 rounded-xl"
+                  className="object-cover w-full sm:w-40 lg:w-40 rounded-t-xl sm:h-42   rounded-xl"
                 />
 
                 <div className=" py-5 text-gray-500">
-                  <h1 className=" text-gray-700 text-[20px] pb-1 font-semibold">
+                  <h1 className=" text-gray-700 text-[18px] pb-1 font-semibold">
                     Albert R. Ardoin
                   </h1>
-                  <p className="text-[16px] pb-1">Actor</p>
-                  <p className="pb-2">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  <p className="text-[14px] pb-1">Actor</p>
+                  <p className="pb-2 text-[15px]">
+                    Lorem ipsum dolor sit amet consectetur adipisi
                   </p>
-                  <div className="flex gap-5 text-[19px]">
+                  <div className="flex gap-5 text-[17px]">
                     <FaFacebookF />
                     <FaTwitter />
-                    <FaBehance />
+                    <FaBehance className="text-[20px]"/>
                   </div>
                 </div>
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="flex  flex-col sm:flex-row gap-5  shadow-[0_2px_9px_rgba(0,0,0,0.3)] rounded-xl">
+              <div className="flex flex-col sm:flex-row justify-center gap-5 shadow-[0_2px_9px_rgba(0,0,0,0.3)] rounded-xl">
                 <img
                   src={image}
                   alt=""
-                  className="object-cover sm:w-full lg:w-45 rounded-t-xl h-49 rounded-xl"
+                  className="object-cover w-full sm:w-40 lg:w-40 rounded-t-xl sm:h-42   rounded-xl"
                 />
 
-                <div className="py-5 text-gray-500">
-                  <h1 className=" text-gray-700 text-[20px] pb-1 font-semibold">
+                <div className=" py-5 text-gray-500">
+                  <h1 className=" text-gray-700 text-[18px] pb-1 font-semibold">
                     Albert R. Ardoin
                   </h1>
-                  <p className="text-[16px] pb-1">Actor</p>
-                  <p className="pb-2">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  <p className="text-[14px] pb-1">Actor</p>
+                  <p className="pb-2 text-[15px]">
+                    Lorem ipsum dolor sit amet consectetur adipisi
                   </p>
-                  <div className="flex gap-5 text-[19px]">
+                  <div className="flex gap-5 text-[17px]">
                     <FaFacebookF />
                     <FaTwitter />
-                    <FaBehance />
+                    <FaBehance className="text-[20px]"/>
                   </div>
                 </div>
               </div>
@@ -845,54 +852,54 @@ export default function Home() {
           <img
             src="https://media.istockphoto.com/id/517188688/photo/mountain-landscape.jpg?s=612x612&w=0&k=20&c=A63koPKaCyIwQWOTFBRWXj_PwCrR4cEoOw2S9Q7yVl8="
             alt=""
-            className="w-full h-160 lg:h-150 object-fill"
+            className="w-full h-160 md:h-120 lg:h-137 object-fill"
           />
-          <div className="absolute bg-green-500/90 inset-0 backdrop-opacity-10 text-center px-5 py-10  lg:px-75 lg:py-15">
+          <div className="absolute bg-green-500/90 inset-0 backdrop-opacity-10 text-center px-5 py-10 lg:px-65 xl:px-75 lg:py-15 xl:py-19">
             <div className="flex items-center justify-center flex-col">
               <img
                 src={image}
                 alt=""
-                className="rounded-full w-35 h-35 object-cover"
+                className="rounded-full w-36 h-36 object-cover"
               />
-              <p className="py-9">
+              <p className="pt-7 pb-6 leading-7">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
                 nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
                 in reprehenderit in voluptate velit.
               </p>
-              <p className="font-['News_Cycle'] text-green-600 text-9xl font-bold">
-                ''
-              </p>
-              <h1 className="text-[17px] font-medium">FLORENCE M. COFER</h1>
-              <p>Designer</p>
+              
+                <RiDoubleQuotesR className="text-green-600 text-[45px] font-bold"/>
+              
+              <h1 className="text-[16px] font-medium pt-5">FLORENCE M. COFER</h1>
+              <p className="text-[14px]">Designer</p>
             </div>
           </div>
         </div>
       </div>
-      <div className="py-26 bg-white text-gray-700 ">
-        <div className="flex justify-center flex-col items-center pb-17  ">
-          <h1 className="text-[30px] font-semibold pb-2">LATEST NEWS</h1>
+      <div className="lg:pt-26 lg:pb-34 pt-17 pb-20 bg-white text-gray-700">
+        <div className="flex justify-center flex-col items-center pb-9 sm:pb-17">
+          <h1 className="sm:text-[30px] text-[25px] font-semibold pb-2">LATEST NEWS</h1>
           <span className="block border-1 w-19 border-green-500 ml-3 text-center"></span>
-          <p className="text-[15px] text-center px-5 lg:px-100 pt-9 leading-7">
+          <p className="text-[15px] px-5 md:px-30 lg:px-75 xl:px-100 text-center pt-4 sm:pt-9 leading-7">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua
           </p>
         </div>
-        <div className="flex flex-col sm:flex-row gap-7 px-4 sm:px-20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 px-3 lg:px-20 sm:px-6 gap-8">
           <div className=" shadow-[0_2px_9px_rgba(0,0,0,0.3)] rounded-xl">
             <img
               src={image}
               alt=""
-              className="object-cover w-107 rounded-t-xl h-47"
+              className="object-cover w-full  rounded-t-xl h-49"
             />
-            <div className="px-7 text-gray-700 py-7 leading-7">
+            <div className="px-7 text-gray-700 py-6 leading-7">
               <p className="text-[15px] pb-1">30 May, 2017</p>
               <h1 className="text-[16px] font-medium">
                 Wood Work Adds Value To
               </h1>
               <h1 className="text-[16px] font-medium">Your Property Five</h1>
-              <p className="text-[13.5px] text-left leading-5 pb-3">
+              <p className="text-[13.5px] text-left leading-5 pb-2">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
@@ -907,15 +914,15 @@ export default function Home() {
             <img
               src={image}
               alt=""
-              className="object-cover w-107 rounded-t-xl h-47"
+              className="object-cover w-full rounded-t-xl h-49"
             />
-            <div className="px-7 text-gray-700 py-7 leading-7">
+            <div className="px-7 text-gray-700 py-6 leading-7">
               <p className="text-[15px] pb-1">30 May, 2017</p>
               <h1 className="text-[16px] font-medium">
                 Wood Work Adds Value To
               </h1>
               <h1 className="text-[16px] font-medium">Your Property Five</h1>
-              <p className="text-[13.5px] text-left leading-5 pb-3">
+              <p className="text-[13.5px] text-left leading-5 pb-2">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
@@ -930,15 +937,15 @@ export default function Home() {
             <img
               src={image}
               alt=""
-              className="object-cover w-107 rounded-t-xl h-47"
+              className="object-cover w-full rounded-t-xl h-49"
             />
-            <div className="px-7 text-gray-700 py-7 leading-7">
+            <div className="px-7 text-gray-700 py-6 leading-7">
               <p className="text-[15px] pb-1">30 May, 2017</p>
               <h1 className="text-[16px] font-medium">
                 Wood Work Adds Value To
               </h1>
               <h1 className="text-[16px] font-medium">Your Property Five</h1>
-              <p className="text-[13.5px] text-left leading-5 pb-3">
+              <p className="text-[13.5px] text-left leading-5 pb-2">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
@@ -950,7 +957,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="px-5 lg:px-20 bg-gray-100 ">
+      <div className="px-5 lg:py-1 lg:px-20 bg-gray-100 ">
         <Swiper
           loop={true}
           
@@ -958,12 +965,12 @@ export default function Home() {
             delay: 1500,
             disableOnInteraction: false,
           }}
-          slidesPerView={1.5} // default mobile
-          spaceBetween={10} // default mobile
+          slidesPerView={1.5} 
+          spaceBetween={10} 
           breakpoints={{
-            640: { slidesPerView: 1.5, spaceBetween: 10 }, // small tablet
-            768: { slidesPerView: 3, spaceBetween: 10 }, // tablet
-            1024: { slidesPerView: 4, spaceBetween: 10 }, // desktop
+            640: { slidesPerView: 1.5, spaceBetween: 10 }, 
+            768: { slidesPerView: 3, spaceBetween: 10 }, 
+            1024: { slidesPerView: 4, spaceBetween: 10 }, 
           }}
           modules={[Autoplay, Pagination, Navigation]}
         >
@@ -989,25 +996,25 @@ export default function Home() {
           </SwiperSlide>
         </Swiper>
       </div>
-      <div className="px-5 lg:px-19 py-20 bg-[#2e2e2e]">
-        <div className="flex flex-col sm:flex-row justify-center gap-17">
-          <div className="flex-1 min-w-[246px] lg:min-w-[346px] lg:max-w-[400px]">
-            <h1 className="text-[23px] font-semibold pb-5">HELP CHARITY</h1>
-            <p className="text-[15px] text-[#4a4a4a] leading-7">
+      <div className="px-5 lg:px-5 xl:px-19 pt-18 sm:pb-12 lg:pb-21 bg-[#2e2e2e]">
+        <div className="grid grid-cols-1 md:grid-cols-[1.5fr_1fr] lg:grid-cols-[1fr_2.8fr_2fr_1.5fr] xl:grid-cols-[1.5fr_1fr_1fr_1fr] md:gap-10 xl:gap-17 px-3">
+          <div className=" min-w-[246px] lg:min-w-[346px] lg:max-w-[400px] sm:pb-0 pb-5">
+            <h1 className="text-[23px] font-semibold pb-6">HELP CHARITY</h1>
+            <p className="text-[15px] text-[rgb(121,121,121)] leading-7">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
             </p>
-            <span className="block border-1  border-[#4a4a4a]  text-center my-9"></span>
-            <div className="flex gap-5 items-center text-[#4a4a4a] ">
+            <span className="block border-1  border-[rgb(121,121,121)]  text-center my-8"></span>
+            <div className="flex gap-5 items-center text-[rgb(121,121,121)] pt-1">
               <FaFacebookF></FaFacebookF>
               <FaTwitter></FaTwitter>
               <FaBehance className="text-[21px]"></FaBehance>
               <FaDribbble></FaDribbble>
             </div>
           </div>
-          <div className="flex-1">
-            <h1 className="text-[20px] font-semibold pb-6">RECENT POST</h1>
+          <div className="sm:pb-0 pb-5">
+            <h1 className="text-[20px] font-semibold pt-2 pb-3">RECENT POST</h1>
 
             {posts.map((title, index) => (
               <div key={index} className="relative">
@@ -1018,18 +1025,18 @@ export default function Home() {
                   className="flex gap-2 py-1 w-full items-center"
                 >
                   <span
-                    className={`text-md text-[#4a4a4a] transform transition-transform duration-200 ${
+                    className={`text-md text-[rgb(121,121,121)] transform transition-transform duration-200 ${
                       activeIndex === index ? "rotate-90" : "rotate-0"
                     }`}
                   >
                     <MdKeyboardArrowRight />
                   </span>
 
-                  <p className="text-[15px] text-[#4a4a4a]">{title}</p>
+                  <p className="text-[15px] text-[rgb(121,121,121)]">{title}</p>
                 </button>
 
                 {activeIndex === index && (
-                  <div className="absolute left-6 top-full z-50 w-full bg-[#2e2e2e] border shadow-md p-2">
+                  <div className="ml-6  bg-[#2e2e2e] text-[15px] text-[rgb(121,121,121)] p-1 space-y-1">
                     <p>Option1</p>
                     <p>Option2</p>
                     <p>Option3</p>
@@ -1039,35 +1046,35 @@ export default function Home() {
             ))}
           </div>
 
-          <div className="flex-1">
+          <div className="sm:pb-0 pb-5">
             <h1 className="text-[20px] font-semibold pb-6">USEFUL LINKS</h1>
-            <ul className="list-disc text-[15px] text-[#4a4a4a] leading-7">
+            <ul className="list-disc text-[15px] text-[rgb(121,121,121)] leading-7">
               <li>Home</li>
               <li>Causes</li>
               <li>Events</li>
               <li>Blog</li>
             </ul>
           </div>
-          <div className="flex-1">
+          <div className="">
             <h1 className="text-[20px] font-semibold pb-6">CONTACT US</h1>
-            <div className="flex gap-3 items-center text-[15px] text-[#4a4a4a] pb-2">
+            <div className="flex gap-3 items-center text-[14px] text-[rgb(121,121,121)] pb-2">
               <MdLocationOn />
               <p>423 Some adr, Chicago, Us</p>
             </div>
-            <div className="flex gap-3 items-center text-[15px] text-[#4a4a4a] pb-2">
+            <div className="flex gap-3 items-center text-[14px] text-[rgb(121,121,121)] pb-2">
               <IoMdMail />
-              <p>Email: mail@mail.com</p>
+              <p>mail@mail.com</p>
             </div>
-            <div className="flex gap-3 items-center text-[15px] text-[#4a4a4a] pb-2">
+            <div className="flex gap-3 items-center text-[14px] text-[rgb(121,121,121)] pb-2">
               <FaPhoneAlt />
-              <p>Phone: +00 151515</p>
+              <p>+00 151515</p>
             </div>
           </div>
         </div>
       </div>
-      <div className="py-7 text-[13px] lg:text-[16.5px] text-gray-300 text-center">
+      <div className="py-7 text-[13px] lg:text-[14.5px] text-gray-300 text-center">
         <p>
-          Copyright @ 2027 <span className="text-green-500">DartThemes</span> |
+          Copyright @ 2017 <span className="text-green-500">DartThemes</span> |
           All Rights Reserved
         </p>
       </div>
